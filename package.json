@@ -1,9 +1,18 @@
 {
   "name": "gzip-unzip-text",
-  "license": "MIT",
-  "displayName": "Gzip / Unzip text",
   "description": "Gzip text and encode it to Base64 and unzip Base64 encoded text.",
   "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xballoy/vscode-gzip-unzip-text.git"
+  },
+  "author": "Xavier Balloy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xballoy/vscode-gzip-unzip-text/issues"
+  },
+  "homepage": "https://github.com/xballoy/vscode-gzip-unzip-text#readme",
+  "displayName": "Gzip / Unzip text",
   "engines": {
     "vscode": "^1.66.0"
   },
@@ -34,17 +43,16 @@
     "package": "webpack --mode production --devtool hidden-source-map",
     "compile-tests": "tsc",
     "watch-tests": "tsc -w",
-    "pretest": "npm run compile-tests && npm run compile && npm run lint:check && npm run format:check",
     "lint:check": "eslint src --cache",
     "lint:fix": "eslint src --cache --fix",
     "format:check": "prettier --check src",
     "format:fix": "prettier --write src",
-    "test": "node ./out/test/runTest.js"
+    "test": "npm run compile-tests && node ./out/test/runTest.js"
   },
   "devDependencies": {
     "@types/glob": "7.2.0",
     "@types/mocha": "9.1.0",
-    "@types/node": "14.x",
+    "@types/node": "16.11.7",
     "@types/vscode": "1.66.0",
     "@typescript-eslint/eslint-plugin": "5.20.0",
     "@typescript-eslint/parser": "5.20.0",
