@@ -1,9 +1,18 @@
 {
   "name": "gzip-unzip-text",
-  "license": "MIT",
-  "displayName": "Gzip / Unzip text",
   "description": "Gzip text and encode it to Base64 and unzip Base64 encoded text.",
   "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xballoy/vscode-gzip-unzip-text.git"
+  },
+  "author": "Xavier Balloy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xballoy/vscode-gzip-unzip-text/issues"
+  },
+  "homepage": "https://github.com/xballoy/vscode-gzip-unzip-text#readme",
+  "displayName": "Gzip / Unzip text",
   "engines": {
     "vscode": "^1.66.0"
   },
