@@ -14,8 +14,8 @@ jobs:
       matrix:
         config:
           - os: ubuntu-20.04
-#          - os: macos-11
-#          - os: windows-2022
+          - os: macos-11
+          - os: windows-2022
 
     steps:
       - name: Checkout
