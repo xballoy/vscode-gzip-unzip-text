@@ -31,7 +31,9 @@ jobs:
         run: npm run format:check
 
       - name: Test
-        run: npm run test
+        uses: GabrielBB/xvfb-action@v1
+        with:
+          run: npm run test
 
       - name: Build
         run: npm run compile
