@@ -31,13 +31,18 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Bump the package version
+        run: |
+          git config user.name 'Xavier Balloy'
+          git config user.email '686305+xballoy@users.noreply.github.com'
+          npm version ${{ github.event.inputs.version }}
+
       - name: Publish
         uses: lannonbr/vsce-action@3.0.0
         with:
-          args: "publish $VERSION -p $VSCE_TOKEN"
+          args: "publish -p $VSCE_TOKEN"
         env:
           VSCE_TOKEN: ${{ secrets.VSCE_TOKEN }}
-          VERSION: ${{ github.event.inputs.version }}
 
       - name: Push
         run: |
