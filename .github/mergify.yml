@@ -1,15 +1,10 @@
 pull_request_rules:
-  - name: Automatic merge on approval
-    conditions:
-      - label=ready-to-merge
-      - check-success=Build and test
-    actions:
-      merge:
-        method: squash
   - name: Automatic merge for Dependabot pull requests
     conditions:
       - author=dependabot[bot]
-      - check-success=Build and test
+      - check-success=Build and test (ubuntu-20.04)
+      - check-success=Build and test (macos-11)
+      - check-success=Build and test (windows-2022)
     actions:
       merge:
         method: squash
