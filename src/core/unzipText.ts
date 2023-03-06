@@ -1,4 +1,4 @@
-import { unzipSync } from 'zlib';
+import { unzipSync } from 'node:zlib';
 import type { TextTransformFn } from './transformSelectedText';
 
 export const unzipText: TextTransformFn = (value: string) => {

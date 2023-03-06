@@ -1,4 +1,4 @@
-import { gzipSync } from 'zlib';
+import { gzipSync } from 'node:zlib';
 import type { TextTransformFn } from './transformSelectedText';
 
 export const gzipText: TextTransformFn = (value: string) => {

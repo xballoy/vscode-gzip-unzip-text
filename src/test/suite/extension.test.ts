@@ -1,4 +1,4 @@
-import { strictEqual } from 'assert';
+import { strictEqual } from 'node:assert';
 import { gzipText } from '../../core/gzipText';
 import { unzipText } from '../../core/unzipText';
 
