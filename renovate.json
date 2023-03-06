@@ -8,5 +8,10 @@
   "automerge": true,
   "lockFileMaintenance": {
     "enabled": true
-  }
+  },
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["major"]
+    }
+  ]
 }
