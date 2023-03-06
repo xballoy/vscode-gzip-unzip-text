@@ -1,8 +1,8 @@
-import path from 'path';
+import path from 'node:path';
 import glob from 'glob';
 import Mocha from 'mocha';
 
-export function run(): Promise<void> {
+export async function run(): Promise<void> {
   const mocha = new Mocha({
     ui: 'tdd',
     color: true,
@@ -10,27 +10,21 @@ export function run(): Promise<void> {
 
   const testsRoot = path.resolve(__dirname, '..');
 
+  const files = await glob('**/**.test.js', { cwd: testsRoot });
+  files.forEach((file) => mocha.addFile(path.resolve(testsRoot, file)));
+
   return new Promise((resolve, reject) => {
-    // eslint-disable-next-line consistent-return
-    glob('**/**.test.js', { cwd: testsRoot }, (err, files) => {
-      if (err) {
-        return reject(err);
-      }
-
-      files.forEach((file) => mocha.addFile(path.resolve(testsRoot, file)));
-
-      try {
-        mocha.run((failures) => {
-          if (failures > 0) {
-            reject(new Error(`${failures} tests failed.`));
-          } else {
-            resolve();
-          }
-        });
-      } catch (mochaErr) {
-        console.error(mochaErr);
-        reject(mochaErr);
-      }
-    });
+    try {
+      mocha.run((failures) => {
+        if (failures > 0) {
+          reject(new Error(`${failures} tests failed.`));
+        } else {
+          resolve();
+        }
+      });
+    } catch (mochaErr) {
+      console.error(mochaErr);
+      reject(mochaErr);
+    }
   });
 }
