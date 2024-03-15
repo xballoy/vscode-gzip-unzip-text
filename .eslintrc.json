@@ -1,11 +1,6 @@
 {
   "plugins": ["@typescript-eslint"],
-  "extends": [
-    "airbnb-base",
-    "airbnb-typescript/base",
-    "plugin:@typescript-eslint/recommended",
-    "prettier"
-  ],
+  "extends": ["airbnb-base", "airbnb-typescript/base", "plugin:@typescript-eslint/recommended", "prettier"],
   "parserOptions": {
     "project": "./tsconfig.eslint.json"
   },
@@ -43,6 +38,12 @@
       "files": "*.config.ts",
       "rules": {
         "import/no-default-export": "off"
+      }
+    },
+    {
+      "files": "webpack.config.js",
+      "rules": {
+        "@typescript-eslint/no-var-requires": "off"
       }
     }
   ]

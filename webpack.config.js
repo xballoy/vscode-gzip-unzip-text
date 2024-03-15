@@ -1,7 +1,6 @@
-import * as path from 'path';
-import type { Configuration } from 'webpack';
+const path = require('node:path');
 
-const config: Configuration = {
+const config = {
   target: 'node',
   mode: 'none',
 
@@ -24,7 +23,7 @@ const config: Configuration = {
         exclude: /node_modules/,
         use: [
           {
-            loader: 'ts-loader',
+            loader: 'swc-loader',
           },
         ],
       },
@@ -35,4 +34,4 @@ const config: Configuration = {
     level: 'log',
   },
 };
-export default config;
+exports.default = config;
