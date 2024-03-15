@@ -51,6 +51,7 @@
     "test": "npm run compile-tests && node ./out/test/runTest.js"
   },
   "devDependencies": {
+    "@swc/core": "1.4.8",
     "@types/glob": "8.1.0",
     "@types/mocha": "10.0.6",
     "@types/node": "20.11.28",
@@ -66,8 +67,7 @@
     "glob": "10.3.10",
     "mocha": "10.3.0",
     "prettier": "3.2.5",
-    "ts-loader": "9.5.1",
-    "ts-node": "10.9.2",
+    "swc-loader": "0.2.6",
     "typescript": "5.4.2",
     "webpack": "5.90.3",
     "webpack-cli": "5.1.4"
