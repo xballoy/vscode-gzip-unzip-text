@@ -1,6 +1,9 @@
+// @ts-check
 const path = require('node:path');
 
-const config = {
+/** @typedef {import('webpack').Configuration} WebpackConfig */
+/** @type WebpackConfig */
+const extensionConfig = {
   target: 'node',
   mode: 'none',
 
@@ -34,4 +37,4 @@ const config = {
     level: 'log',
   },
 };
-exports.default = config;
+module.exports = [extensionConfig];
