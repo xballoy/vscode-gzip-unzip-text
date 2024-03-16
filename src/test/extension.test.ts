@@ -1,6 +1,6 @@
 import { strictEqual } from 'node:assert';
-import { gzipText } from '../../core/gzipText';
-import { unzipText } from '../../core/unzipText';
+import { gzipText } from '../core/gzipText';
+import { unzipText } from '../core/unzipText';
 
 suite('Gzip / Unzip text Test Suite', () => {
   test('should be reversible', () => {
