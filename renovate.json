@@ -3,14 +3,8 @@
   "extends": [
     "config:best-practices",
     ":enableVulnerabilityAlertsWithLabel(security)",
-    ":maintainLockFilesWeekly"
+    ":maintainLockFilesWeekly",
+    ":automergeMinor"
   ],
-  "labels": ["dependencies"],
-  "packageRules": [
-    {
-      "matchUpdateTypes": ["minor", "patch"],
-      "matchCurrentVersion": "!/^0/",
-      "automerge": true
-    }
-  ]
+  "labels": ["dependencies"]
 }
