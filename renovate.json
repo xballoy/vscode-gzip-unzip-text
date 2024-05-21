@@ -15,7 +15,7 @@
         "^.github/(?:workflows|actions)/.+\\.ya?ml$"
       ],
       "matchStrings": [
-        "os: \"(?<currentValue>.*?)\""
+        "os: (?<depName>.*)-(?<currentValue>.*)"
       ],
       "datasourceTemplate": "github-runners"
     }
