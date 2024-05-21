@@ -7,5 +7,17 @@
     ":automergeMinor",
     ":automergeDigest"
   ],
-  "labels": ["dependencies"]
+  "labels": ["dependencies"],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": [
+        "^.github/(?:workflows|actions)/.+\\.ya?ml$"
+      ],
+      "matchStrings": [
+        "os: \"(?<currentValue>.*?)\""
+      ],
+      "datasourceTemplate": "github-runners"
+    }
+  ]
 }
