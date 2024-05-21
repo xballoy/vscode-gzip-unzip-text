@@ -15,7 +15,7 @@ jobs:
       matrix:
         config:
           - os: ubuntu-20.04
-          - os: macos-11
+          - os: macos-14
           - os: windows-2022
 
     steps:
