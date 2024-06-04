@@ -52,7 +52,7 @@
   "devDependencies": {
     "@biomejs/biome": "1.7.3",
     "@swc/core": "1.5.24",
-    "@types/node": "20.14.0",
+    "@types/node": "20.14.1",
     "@types/vscode": "1.89.0",
     "@vscode/test-cli": "0.0.9",
     "@vscode/test-electron": "2.4.0",
