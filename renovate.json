@@ -5,7 +5,8 @@
     ":enableVulnerabilityAlertsWithLabel(security)",
     ":maintainLockFilesWeekly",
     ":automergeMinor",
-    ":automergeDigest"
+    ":automergeDigest",
+    "customManagers:biomeVersions"
   ],
   "labels": ["dependencies"],
   "customManagers": [
