@@ -55,7 +55,7 @@
     "@types/node": "20.14.10",
     "@types/vscode": "1.91.0",
     "@vscode/test-cli": "0.0.9",
-    "@vscode/test-electron": "2.4.0",
+    "@vscode/test-electron": "2.4.1",
     "swc-loader": "0.2.6",
     "typescript": "5.5.3",
     "webpack": "5.92.1",
