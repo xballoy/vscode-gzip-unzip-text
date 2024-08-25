@@ -38,7 +38,7 @@ jobs:
           npm version ${{ github.event.inputs.version }}
 
       - name: Publish
-        uses: lannonbr/vsce-action@0f3391ee0477b08fae949eb0a875e91e6d20b075 # 3.0.0
+        uses: lannonbr/vsce-action@510e61c5e9e6f33c0418ec5ff5fd36b1ced61e85 # 4.0.0
         with:
           args: "publish -p $VSCE_TOKEN"
         env:
