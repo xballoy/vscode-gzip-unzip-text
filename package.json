@@ -17,13 +17,8 @@
   "engines": {
     "vscode": "^1.66.0"
   },
-  "categories": [
-    "Other"
-  ],
-  "activationEvents": [
-    "onCommand:gzip-unzip-text.gzip",
-    "onCommand:gzip-unzip-text.unzip"
-  ],
+  "categories": ["Other"],
+  "activationEvents": ["onCommand:gzip-unzip-text.gzip", "onCommand:gzip-unzip-text.unzip"],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
@@ -42,10 +37,9 @@
     "compile": "webpack",
     "package": "webpack --mode production --devtool hidden-source-map",
     "compile-tests": "tsc --outDir out",
-    "lint:check": "biome lint src",
-    "lint:fix": "biome lint --apply src",
-    "format:check": "biome format src",
-    "format:fix": "biome format --write src",
+    "quality:fix": "biome check --write --no-errors-on-unmatched",
+    "quality:check": "biome check --no-errors-on-unmatched",
+    "quality:ci": "biome ci --no-errors-on-unmatched",
     "pretest": "npm run compile-tests && npm run compile",
     "test": "vscode-test"
   },
