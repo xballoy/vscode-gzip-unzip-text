@@ -9,12 +9,26 @@
     "customManagers:biomeVersions"
   ],
   "labels": ["dependencies"],
+  "packageRules": [
+    {
+      "matchDepNames": ["@types/vscode"],
+      "rangeStrategy": "bump"
+    }
+  ],
   "customManagers": [
     {
       "customType": "regex",
       "fileMatch": ["^.github/(?:workflows|actions)/.+\\.ya?ml$"],
       "matchStrings": ["os: (?<depName>.*)-(?<currentValue>.*)"],
       "datasourceTemplate": "github-runners"
+    },
+    {
+      "customType": "jsonata",
+      "fileFormat": "json",
+      "fileMatch": ["^package.json$"],
+      "depNameTemplate": "@types/vscode",
+      "matchStrings": ["engines.{ \"currentValue\": vscode}"],
+      "datasourceTemplate": "npm"
     }
   ]
 }
