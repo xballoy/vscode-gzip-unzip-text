@@ -12,12 +12,8 @@
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": [
-        "^.github/(?:workflows|actions)/.+\\.ya?ml$"
-      ],
-      "matchStrings": [
-        "os: (?<depName>.*)-(?<currentValue>.*)"
-      ],
+      "fileMatch": ["^.github/(?:workflows|actions)/.+\\.ya?ml$"],
+      "matchStrings": ["os: (?<depName>.*)-(?<currentValue>.*)"],
       "datasourceTemplate": "github-runners"
     }
   ]

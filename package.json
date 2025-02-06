@@ -17,13 +17,8 @@
   "engines": {
     "vscode": "^1.66.0"
   },
-  "categories": [
-    "Other"
-  ],
-  "activationEvents": [
-    "onCommand:gzip-unzip-text.gzip",
-    "onCommand:gzip-unzip-text.unzip"
-  ],
+  "categories": ["Other"],
+  "activationEvents": ["onCommand:gzip-unzip-text.gzip", "onCommand:gzip-unzip-text.unzip"],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
@@ -42,10 +37,9 @@
     "compile": "webpack",
     "package": "webpack --mode production --devtool hidden-source-map",
     "compile-tests": "tsc --outDir out",
-    "lint:check": "biome lint src",
-    "lint:fix": "biome lint --apply src",
-    "format:check": "biome format src",
-    "format:fix": "biome format --write src",
+    "quality:fix": "biome check --write --no-errors-on-unmatched",
+    "quality:check": "biome check --no-errors-on-unmatched",
+    "quality:ci": "biome ci --no-errors-on-unmatched",
     "pretest": "npm run compile-tests && npm run compile",
     "test": "vscode-test"
   },
@@ -56,6 +50,7 @@
     "@types/vscode": "1.97.0",
     "@vscode/test-cli": "0.0.10",
     "@vscode/test-electron": "2.4.1",
+    "fast-check": "3.23.2",
     "swc-loader": "0.2.6",
     "typescript": "5.7.3",
     "webpack": "5.97.1",
