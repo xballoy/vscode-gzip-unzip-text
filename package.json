@@ -34,9 +34,9 @@
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
-    "compile": "webpack",
-    "package": "webpack --mode production --devtool hidden-source-map",
-    "compile-tests": "tsc --outDir out",
+    "compile": "node esbuild.js",
+    "package": "node esbuild.js --production",
+    "compile-tests": "tsc -p . --outDir out",
     "quality:fix": "biome check --write --no-errors-on-unmatched",
     "quality:check": "biome check --no-errors-on-unmatched",
     "quality:ci": "biome ci --no-errors-on-unmatched",
@@ -50,10 +50,9 @@
     "@types/vscode": "1.97.0",
     "@vscode/test-cli": "0.0.10",
     "@vscode/test-electron": "2.4.1",
+    "esbuild": "0.24.2",
     "fast-check": "3.23.2",
     "swc-loader": "0.2.6",
-    "typescript": "5.7.3",
-    "webpack": "5.97.1",
-    "webpack-cli": "6.0.1"
+    "typescript": "5.7.3"
   }
 }
