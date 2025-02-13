@@ -45,7 +45,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
-    "@swc/core": "1.10.15",
+    "@swc/core": "1.10.16",
     "@types/node": "22.13.1",
     "@types/vscode": "1.97.0",
     "@vscode/test-cli": "0.0.10",
