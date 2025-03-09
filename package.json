@@ -15,7 +15,7 @@
   "publisher": "xballoy",
   "displayName": "Gzip / Unzip text",
   "engines": {
-    "vscode": "1.98.0"
+    "vscode": "^1.98.0"
   },
   "categories": ["Other"],
   "activationEvents": ["onCommand:gzip-unzip-text.gzip", "onCommand:gzip-unzip-text.unzip"],
