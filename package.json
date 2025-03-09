@@ -1,7 +1,7 @@
 {
   "name": "gzip-unzip-text",
   "description": "Gzip text and encode it to Base64 and unzip Base64 encoded text.",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xballoy/vscode-gzip-unzip-text.git"
@@ -17,8 +17,13 @@
   "engines": {
     "vscode": "^1.98.0"
   },
-  "categories": ["Other"],
-  "activationEvents": ["onCommand:gzip-unzip-text.gzip", "onCommand:gzip-unzip-text.unzip"],
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:gzip-unzip-text.gzip",
+    "onCommand:gzip-unzip-text.unzip"
+  ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
