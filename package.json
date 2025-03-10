@@ -17,13 +17,8 @@
   "engines": {
     "vscode": "^1.98.0"
   },
-  "categories": [
-    "Other"
-  ],
-  "activationEvents": [
-    "onCommand:gzip-unzip-text.gzip",
-    "onCommand:gzip-unzip-text.unzip"
-  ],
+  "categories": ["Other"],
+  "activationEvents": ["onCommand:gzip-unzip-text.gzip", "onCommand:gzip-unzip-text.unzip"],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
