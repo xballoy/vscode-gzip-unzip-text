@@ -53,6 +53,6 @@
     "esbuild": "0.25.2",
     "fast-check": "4.0.1",
     "swc-loader": "0.2.6",
-    "typescript": "5.8.2"
+    "typescript": "5.8.3"
   }
 }
