@@ -16,7 +16,7 @@ jobs:
         config:
           - os: ubuntu-24.04
           - os: macos-14
-          - os: windows-2022
+          - os: windows-2025
 
     steps:
       - name: Checkout
