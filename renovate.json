@@ -1,34 +1,12 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:best-practices",
-    ":enableVulnerabilityAlertsWithLabel(security)",
-    ":maintainLockFilesWeekly",
-    ":automergeMinor",
-    ":automergeDigest",
-    "customManagers:biomeVersions"
-  ],
-  "labels": ["dependencies"],
-  "packageRules": [
-    {
-      "matchDepNames": ["@types/vscode"],
-      "rangeStrategy": "bump"
-    }
-  ],
+  "extends": ["github>xballoy/renovate-config"]
   "customManagers": [
     {
       "customType": "regex",
       "fileMatch": ["^.github/(?:workflows|actions)/.+\\.ya?ml$"],
       "matchStrings": ["os: (?<depName>.*)-(?<currentValue>.*)"],
       "datasourceTemplate": "github-runners"
-    },
-    {
-      "customType": "jsonata",
-      "fileFormat": "json",
-      "fileMatch": ["^package.json$"],
-      "depNameTemplate": "@types/vscode",
-      "matchStrings": ["engines.{ \"currentValue\": vscode}"],
-      "datasourceTemplate": "npm"
     }
   ]
 }
