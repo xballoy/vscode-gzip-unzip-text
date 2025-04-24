@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>xballoy/renovate-config"]
+  "extends": ["github>xballoy/renovate-config"],
   "customManagers": [
     {
       "customType": "regex",
