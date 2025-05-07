@@ -1,11 +1,17 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>xballoy/renovate-config"],
+  "extends": [
+    "github>xballoy/renovate-config"
+  ],
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": ["^.github/(?:workflows|actions)/.+\\.ya?ml$"],
-      "matchStrings": ["os: (?<depName>.*)-(?<currentValue>.*)"],
+      "managerFilePatterns": [
+        "/^.github/(?:workflows|actions)/.+\\.ya?ml$/"
+      ],
+      "matchStrings": [
+        "os: (?<depName>.*)-(?<currentValue>.*)"
+      ],
       "datasourceTemplate": "github-runners"
     }
   ]
