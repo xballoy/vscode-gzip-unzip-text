@@ -40,7 +40,7 @@ importers:
         version: 11.2.2
       swc-loader:
         specifier: 0.2.6
-        version: 0.2.6(@swc/core@1.11.24)(webpack@5.99.7(@swc/core@1.11.24)(esbuild@0.25.4))
+        version: 0.2.6(@swc/core@1.11.24)(webpack@5.99.8(@swc/core@1.11.24)(esbuild@0.25.4))
       typescript:
         specifier: 5.8.3
         version: 5.8.3
@@ -615,8 +615,8 @@ packages:
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
 
-  electron-to-chromium@1.5.149:
-    resolution: {integrity: sha512-UyiO82eb9dVOx8YO3ajDf9jz2kKyt98DEITRdeLPstOEuTlLzDA4Gyq5K9he71TQziU5jUVu2OAu5N48HmQiyQ==}
+  electron-to-chromium@1.5.151:
+    resolution: {integrity: sha512-Rl6uugut2l9sLojjS4H4SAr3A4IgACMLgpuEMPYCVcKydzfyPrn5absNRju38IhQOf/NwjJY8OGWjlteqYeBCA==}
 
   emoji-regex@10.4.0:
     resolution: {integrity: sha512-EC+0oUMY1Rqm4O6LLrgjtYDvcVYTy7chDnM4Q7030tP4Kwj3u/pR6gP9ygnp2CJMK5Gq+9Q2oqmrFJAz01DXjw==}
@@ -1149,8 +1149,8 @@ packages:
     resolution: {integrity: sha512-/DyMEOrDgLKKIG0fmvtz+4dUX/3Ghozwgm6iPp8KRhvn+eQf9+Q7GWxVNMk3+uCPWfdXYC4ExGBckIXdFEfH1w==}
     engines: {node: '>=10.13.0'}
 
-  webpack@5.99.7:
-    resolution: {integrity: sha512-CNqKBRMQjwcmKR0idID5va1qlhrqVUKpovi+Ec79ksW8ux7iS1+A6VqzfZXgVYCFRKl7XL5ap3ZoMpwBJxcg0w==}
+  webpack@5.99.8:
+    resolution: {integrity: sha512-lQ3CPiSTpfOnrEGeXDwoq5hIGzSjmwD72GdfVzF7CQAI7t47rJG9eDWvcEkEn3CUQymAElVvDg3YNTlCYj+qUQ==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     peerDependencies:
@@ -1595,7 +1595,7 @@ snapshots:
   browserslist@4.24.5:
     dependencies:
       caniuse-lite: 1.0.30001717
-      electron-to-chromium: 1.5.149
+      electron-to-chromium: 1.5.151
       node-releases: 2.0.19
       update-browserslist-db: 1.1.3(browserslist@4.24.5)
 
@@ -1694,7 +1694,7 @@ snapshots:
 
   eastasianwidth@0.2.0: {}
 
-  electron-to-chromium@1.5.149: {}
+  electron-to-chromium@1.5.151: {}
 
   emoji-regex@10.4.0: {}
 
@@ -2182,22 +2182,22 @@ snapshots:
 
   supports-color@9.4.0: {}
 
-  swc-loader@0.2.6(@swc/core@1.11.24)(webpack@5.99.7(@swc/core@1.11.24)(esbuild@0.25.4)):
+  swc-loader@0.2.6(@swc/core@1.11.24)(webpack@5.99.8(@swc/core@1.11.24)(esbuild@0.25.4)):
     dependencies:
       '@swc/core': 1.11.24
       '@swc/counter': 0.1.3
-      webpack: 5.99.7(@swc/core@1.11.24)(esbuild@0.25.4)
+      webpack: 5.99.8(@swc/core@1.11.24)(esbuild@0.25.4)
 
   tapable@2.2.1: {}
 
-  terser-webpack-plugin@5.3.14(@swc/core@1.11.24)(esbuild@0.25.4)(webpack@5.99.7(@swc/core@1.11.24)(esbuild@0.25.4)):
+  terser-webpack-plugin@5.3.14(@swc/core@1.11.24)(esbuild@0.25.4)(webpack@5.99.8(@swc/core@1.11.24)(esbuild@0.25.4)):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
       jest-worker: 27.5.1
       schema-utils: 4.3.2
       serialize-javascript: 6.0.2
       terser: 5.39.0
-      webpack: 5.99.7(@swc/core@1.11.24)(esbuild@0.25.4)
+      webpack: 5.99.8(@swc/core@1.11.24)(esbuild@0.25.4)
     optionalDependencies:
       '@swc/core': 1.11.24
       esbuild: 0.25.4
@@ -2244,7 +2244,7 @@ snapshots:
 
   webpack-sources@3.2.3: {}
 
-  webpack@5.99.7(@swc/core@1.11.24)(esbuild@0.25.4):
+  webpack@5.99.8(@swc/core@1.11.24)(esbuild@0.25.4):
     dependencies:
       '@types/eslint-scope': 3.7.7
       '@types/estree': 1.0.7
@@ -2267,7 +2267,7 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 4.3.2
       tapable: 2.2.1
-      terser-webpack-plugin: 5.3.14(@swc/core@1.11.24)(esbuild@0.25.4)(webpack@5.99.7(@swc/core@1.11.24)(esbuild@0.25.4))
+      terser-webpack-plugin: 5.3.14(@swc/core@1.11.24)(esbuild@0.25.4)(webpack@5.99.8(@swc/core@1.11.24)(esbuild@0.25.4))
       watchpack: 2.4.2
       webpack-sources: 3.2.3
     transitivePeerDependencies:
