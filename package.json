@@ -47,7 +47,7 @@
     "@biomejs/biome": "1.9.4",
     "@swc/core": "1.11.29",
     "@types/mocha": "10.0.10",
-    "@types/node": "22.15.21",
+    "@types/node": "22.15.23",
     "@types/vscode": "1.100.0",
     "@vscode/test-cli": "0.0.10",
     "@vscode/test-electron": "2.5.2",
