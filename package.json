@@ -17,8 +17,13 @@
   "engines": {
     "vscode": "^1.98.0"
   },
-  "categories": ["Other"],
-  "activationEvents": ["onCommand:gzip-unzip-text.gzip", "onCommand:gzip-unzip-text.unzip"],
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:gzip-unzip-text.gzip",
+    "onCommand:gzip-unzip-text.unzip"
+  ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
@@ -37,14 +42,14 @@
     "compile": "node esbuild.js",
     "package": "node esbuild.js --production",
     "compile-tests": "tsc -p . --outDir out",
-    "quality:fix": "biome check --write --no-errors-on-unmatched",
-    "quality:check": "biome check --no-errors-on-unmatched",
+    "quality:fix": "biome check --write --no-errors-on-unmatched .",
+    "quality:check": "biome check --no-errors-on-unmatched .",
     "quality:ci": "biome ci --no-errors-on-unmatched",
     "pretest": "pnpm compile-tests && pnpm compile",
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.9.4",
+    "@biomejs/biome": "2.0.6",
     "@swc/core": "1.12.6",
     "@types/mocha": "10.0.10",
     "@types/node": "22.15.33",
