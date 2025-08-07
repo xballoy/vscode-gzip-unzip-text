@@ -60,7 +60,7 @@
     "fast-check": "4.2.0",
     "mocha": "11.7.1",
     "swc-loader": "0.2.6",
-    "typescript": "5.8.3"
+    "typescript": "5.9.2"
   },
   "packageManager": "pnpm@10.14.0"
 }
