@@ -40,7 +40,7 @@ importers:
         version: 11.7.1
       swc-loader:
         specifier: 0.2.6
-        version: 0.2.6(@swc/core@1.13.4)(webpack@5.101.2(@swc/core@1.13.4)(esbuild@0.25.9))
+        version: 0.2.6(@swc/core@1.13.4)(webpack@5.101.3(@swc/core@1.13.4)(esbuild@0.25.9))
       typescript:
         specifier: 5.9.2
         version: 5.9.2
@@ -520,8 +520,8 @@ packages:
   browser-stdout@1.3.1:
     resolution: {integrity: sha512-qhAVI1+Av2X7qelOfAIYwXONood6XlZE/fXaBSmW/T5SzLAmCgzi+eiWE7fUvbHaeNBQH13UftjpXxsfLkMpgw==}
 
-  browserslist@4.25.2:
-    resolution: {integrity: sha512-0si2SJK3ooGzIawRu61ZdPCO1IncZwS8IzuX73sPZsXW6EQ/w/DAfPyKI8l1ETTCr2MnvqWitmlCUxgdul45jA==}
+  browserslist@4.25.3:
+    resolution: {integrity: sha512-cDGv1kkDI4/0e5yON9yM5G/0A5u8sf5TnmdX5C9qHzI9PPu++sQ9zjm1k9NiOrf3riY4OkK0zSGqfvJyJsgCBQ==}
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
 
@@ -537,8 +537,8 @@ packages:
     resolution: {integrity: sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==}
     engines: {node: '>=10'}
 
-  caniuse-lite@1.0.30001735:
-    resolution: {integrity: sha512-EV/laoX7Wq2J9TQlyIXRxTJqIw4sxfXS4OYgudGxBYRuTv0q7AM6yMEpU/Vo1I94thg9U6EZ2NfZx9GJq83u7w==}
+  caniuse-lite@1.0.30001737:
+    resolution: {integrity: sha512-BiloLiXtQNrY5UyF0+1nSJLXUENuhka2pzy2Fx5pGxqavdrxSCW4U6Pn/PoG3Efspi2frRbHpBV2XsrPE6EDlw==}
 
   chalk@4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
@@ -615,8 +615,8 @@ packages:
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
 
-  electron-to-chromium@1.5.203:
-    resolution: {integrity: sha512-uz4i0vLhfm6dLZWbz/iH88KNDV+ivj5+2SA+utpgjKaj9Q0iDLuwk6Idhe9BTxciHudyx6IvTvijhkPvFGUQ0g==}
+  electron-to-chromium@1.5.208:
+    resolution: {integrity: sha512-ozZyibehoe7tOhNaf16lKmljVf+3npZcJIEbJRVftVsmAg5TeA1mGS9dVCZzOwr2xT7xK15V0p7+GZqSPgkuPg==}
 
   emoji-regex@10.4.0:
     resolution: {integrity: sha512-EC+0oUMY1Rqm4O6LLrgjtYDvcVYTy7chDnM4Q7030tP4Kwj3u/pR6gP9ygnp2CJMK5Gq+9Q2oqmrFJAz01DXjw==}
@@ -810,8 +810,8 @@ packages:
     resolution: {integrity: sha512-GCfE1mtsHGOELCU8e/Z7YWzpmybrx/+dSTfLrvY8qRmaY6zXTKWn6WQIjaAFw069icm6GVMNkgu0NzI4iPZUNw==}
     engines: {node: '>=10'}
 
-  istanbul-reports@3.1.7:
-    resolution: {integrity: sha512-BewmUXImeuRk2YY0PVbxgKAysvhRPUQE0h5QRM++nVWyubKGV0l8qQ5op8+B2DOmwSe63Jivj0BjkPQVf8fP5g==}
+  istanbul-reports@3.2.0:
+    resolution: {integrity: sha512-HGYWWS/ehqTV3xN10i23tkPkpH46MLCIMFNCaaKNavAXTF1RkqxawEPtnjnGZ6XKSInBKkiOA5BKS+aZiY3AvA==}
     engines: {node: '>=8'}
 
   jackspeak@3.4.3:
@@ -1073,8 +1073,8 @@ packages:
       '@swc/core': ^1.2.147
       webpack: '>=2'
 
-  tapable@2.2.2:
-    resolution: {integrity: sha512-Re10+NauLTMCudc7T5WLFLAwDhQ0JWdrMK+9B2M8zR5hRExKmsRDCBA7/aV/pNJFltmBFO5BAMlQFi/vq3nKOg==}
+  tapable@2.2.3:
+    resolution: {integrity: sha512-ZL6DDuAlRlLGghwcfmSn9sK3Hr6ArtyudlSAiCqQ6IfE+b+HHbydbYDIG15IfS5do+7XQQBdBiubF/cV2dnDzg==}
     engines: {node: '>=6'}
 
   terser-webpack-plugin@5.3.14:
@@ -1135,8 +1135,8 @@ packages:
     resolution: {integrity: sha512-yd1RBzSGanHkitROoPFd6qsrxt+oFhg/129YzheDGqeustzX0vTZJZsSsQjVQC4yzBQ56K55XU8gaNCtIzOnTg==}
     engines: {node: '>=10.13.0'}
 
-  webpack@5.101.2:
-    resolution: {integrity: sha512-4JLXU0tD6OZNVqlwzm3HGEhAHufSiyv+skb7q0d2367VDMzrU1Q/ZeepvkcHH0rZie6uqEtTQQe0OEOOluH3Mg==}
+  webpack@5.101.3:
+    resolution: {integrity: sha512-7b0dTKR3Ed//AD/6kkx/o7duS8H3f1a4w3BYpIriX4BzIhjkn4teo05cptsxvLesHFKK5KObnadmCHBwGc+51A==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     peerDependencies:
@@ -1572,12 +1572,12 @@ snapshots:
 
   browser-stdout@1.3.1: {}
 
-  browserslist@4.25.2:
+  browserslist@4.25.3:
     dependencies:
-      caniuse-lite: 1.0.30001735
-      electron-to-chromium: 1.5.203
+      caniuse-lite: 1.0.30001737
+      electron-to-chromium: 1.5.208
       node-releases: 2.0.19
-      update-browserslist-db: 1.1.3(browserslist@4.25.2)
+      update-browserslist-db: 1.1.3(browserslist@4.25.3)
 
   buffer-from@1.1.2: {}
 
@@ -1589,7 +1589,7 @@ snapshots:
       foreground-child: 3.3.1
       istanbul-lib-coverage: 3.2.2
       istanbul-lib-report: 3.0.1
-      istanbul-reports: 3.1.7
+      istanbul-reports: 3.2.0
       test-exclude: 6.0.0
       v8-to-istanbul: 9.3.0
       yargs: 17.7.2
@@ -1597,7 +1597,7 @@ snapshots:
 
   camelcase@6.3.0: {}
 
-  caniuse-lite@1.0.30001735: {}
+  caniuse-lite@1.0.30001737: {}
 
   chalk@4.1.2:
     dependencies:
@@ -1668,7 +1668,7 @@ snapshots:
 
   eastasianwidth@0.2.0: {}
 
-  electron-to-chromium@1.5.203: {}
+  electron-to-chromium@1.5.208: {}
 
   emoji-regex@10.4.0: {}
 
@@ -1679,7 +1679,7 @@ snapshots:
   enhanced-resolve@5.18.3:
     dependencies:
       graceful-fs: 4.2.11
-      tapable: 2.2.2
+      tapable: 2.2.3
 
   es-module-lexer@1.7.0: {}
 
@@ -1855,7 +1855,7 @@ snapshots:
       make-dir: 4.0.0
       supports-color: 7.2.0
 
-  istanbul-reports@3.1.7:
+  istanbul-reports@3.2.0:
     dependencies:
       html-escaper: 2.0.2
       istanbul-lib-report: 3.0.1
@@ -2122,22 +2122,22 @@ snapshots:
 
   supports-color@9.4.0: {}
 
-  swc-loader@0.2.6(@swc/core@1.13.4)(webpack@5.101.2(@swc/core@1.13.4)(esbuild@0.25.9)):
+  swc-loader@0.2.6(@swc/core@1.13.4)(webpack@5.101.3(@swc/core@1.13.4)(esbuild@0.25.9)):
     dependencies:
       '@swc/core': 1.13.4
       '@swc/counter': 0.1.3
-      webpack: 5.101.2(@swc/core@1.13.4)(esbuild@0.25.9)
+      webpack: 5.101.3(@swc/core@1.13.4)(esbuild@0.25.9)
 
-  tapable@2.2.2: {}
+  tapable@2.2.3: {}
 
-  terser-webpack-plugin@5.3.14(@swc/core@1.13.4)(esbuild@0.25.9)(webpack@5.101.2(@swc/core@1.13.4)(esbuild@0.25.9)):
+  terser-webpack-plugin@5.3.14(@swc/core@1.13.4)(esbuild@0.25.9)(webpack@5.101.3(@swc/core@1.13.4)(esbuild@0.25.9)):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.30
       jest-worker: 27.5.1
       schema-utils: 4.3.2
       serialize-javascript: 6.0.2
       terser: 5.43.1
-      webpack: 5.101.2(@swc/core@1.13.4)(esbuild@0.25.9)
+      webpack: 5.101.3(@swc/core@1.13.4)(esbuild@0.25.9)
     optionalDependencies:
       '@swc/core': 1.13.4
       esbuild: 0.25.9
@@ -2163,9 +2163,9 @@ snapshots:
 
   undici-types@6.21.0: {}
 
-  update-browserslist-db@1.1.3(browserslist@4.25.2):
+  update-browserslist-db@1.1.3(browserslist@4.25.3):
     dependencies:
-      browserslist: 4.25.2
+      browserslist: 4.25.3
       escalade: 3.2.0
       picocolors: 1.1.1
 
@@ -2184,7 +2184,7 @@ snapshots:
 
   webpack-sources@3.3.3: {}
 
-  webpack@5.101.2(@swc/core@1.13.4)(esbuild@0.25.9):
+  webpack@5.101.3(@swc/core@1.13.4)(esbuild@0.25.9):
     dependencies:
       '@types/eslint-scope': 3.7.7
       '@types/estree': 1.0.8
@@ -2194,7 +2194,7 @@ snapshots:
       '@webassemblyjs/wasm-parser': 1.14.1
       acorn: 8.15.0
       acorn-import-phases: 1.0.4(acorn@8.15.0)
-      browserslist: 4.25.2
+      browserslist: 4.25.3
       chrome-trace-event: 1.0.4
       enhanced-resolve: 5.18.3
       es-module-lexer: 1.7.0
@@ -2207,8 +2207,8 @@ snapshots:
       mime-types: 2.1.35
       neo-async: 2.6.2
       schema-utils: 4.3.2
-      tapable: 2.2.2
-      terser-webpack-plugin: 5.3.14(@swc/core@1.13.4)(esbuild@0.25.9)(webpack@5.101.2(@swc/core@1.13.4)(esbuild@0.25.9))
+      tapable: 2.2.3
+      terser-webpack-plugin: 5.3.14(@swc/core@1.13.4)(esbuild@0.25.9)(webpack@5.101.3(@swc/core@1.13.4)(esbuild@0.25.9))
       watchpack: 2.4.4
       webpack-sources: 3.3.3
     transitivePeerDependencies:
