@@ -52,7 +52,7 @@
     "@biomejs/biome": "2.2.4",
     "@swc/core": "1.13.20",
     "@types/mocha": "10.0.10",
-    "@types/node": "22.18.7",
+    "@types/node": "22.18.8",
     "@types/vscode": "1.104.0",
     "@vscode/test-cli": "0.0.11",
     "@vscode/test-electron": "2.5.2",
