@@ -50,7 +50,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.7",
-    "@swc/core": "1.13.20",
+    "@swc/core": "1.13.21",
     "@types/mocha": "10.0.10",
     "@types/node": "22.18.12",
     "@types/vscode": "1.105.0",
