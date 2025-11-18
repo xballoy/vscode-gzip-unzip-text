@@ -1,9 +1,12 @@
-import { unzipSync } from 'node:zlib';
+import { promisify } from 'node:util';
+import { unzip } from 'node:zlib';
 import type { TextTransformFn } from './transformSelectedText';
 
-export const unzipText: TextTransformFn = (value: string) => {
+const unzipAsync = promisify(unzip);
+
+export const unzipText: TextTransformFn = async (value: string) => {
   const buffer = Buffer.from(value, 'base64');
-  const unzipBuff = unzipSync(buffer);
+  const unzipBuff = await unzipAsync(buffer);
 
   return unzipBuff.toString('utf-8');
 };

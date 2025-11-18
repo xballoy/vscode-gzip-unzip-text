@@ -1,6 +1,6 @@
 import { getSelectedText, insertTextInNewDocument, showErrorMessage, showInformationMessage } from '../vscode-utils';
 
-export type TextTransformFn = (value: string) => string;
+export type TextTransformFn = (value: string) => Promise<string>;
 export const transformSelectedText = async (fn: TextTransformFn, operation: string) => {
   const selectedText = getSelectedText();
   if (!selectedText) {
@@ -9,7 +9,7 @@ export const transformSelectedText = async (fn: TextTransformFn, operation: stri
   }
 
   try {
-    const result = fn(selectedText);
+    const result = await fn(selectedText);
     await insertTextInNewDocument(result);
   } catch (e) {
     console.error(e);

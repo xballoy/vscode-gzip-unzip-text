@@ -4,10 +4,10 @@ import { gzipText } from '../core/gzipText';
 import { unzipText } from '../core/unzipText';
 
 suite('Gzip / Unzip text Test Suite', () => {
-  test('should be reversible', () => {
-    fc.assert(
-      fc.property(fc.string(), (text) => {
-        strictEqual(unzipText(gzipText(text)), text);
+  test('should be reversible', async () => {
+    await fc.assert(
+      fc.asyncProperty(fc.string(), async (text) => {
+        strictEqual(await unzipText(await gzipText(text)), text);
       }),
     );
   });
