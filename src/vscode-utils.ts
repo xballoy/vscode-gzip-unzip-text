@@ -9,13 +9,11 @@ export const getSelectedText = () => {
   return editor.document.getText(editor.selection);
 };
 
-export const insertTextInNewDocument = (value: string) => {
-  vscode.workspace.openTextDocument().then((textDocument) => {
-    vscode.window.showTextDocument(textDocument).then((textEditor) => {
-      textEditor.edit((edit) => {
-        edit.insert(new vscode.Position(0, 0), value);
-      });
-    });
+export const insertTextInNewDocument = async (value: string) => {
+  const textDocument = await vscode.workspace.openTextDocument();
+  const textEditor = await vscode.window.showTextDocument(textDocument);
+  await textEditor.edit((edit) => {
+    edit.insert(new vscode.Position(0, 0), value);
   });
 };
 
