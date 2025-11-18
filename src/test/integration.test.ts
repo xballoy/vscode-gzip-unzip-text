@@ -53,7 +53,7 @@ suite('Gzip / Unzip Integration Test Suite', () => {
     ok(newEditor !== editor, 'Active editor should be different from original');
 
     const result = newEditor.document.getText();
-    const decompressed = unzipText(result);
+    const decompressed = await unzipText(result);
     strictEqual(decompressed, plainText, 'Gzipped text should decompress to original content');
   });
 
@@ -112,5 +112,43 @@ suite('Gzip / Unzip Integration Test Suite', () => {
 
     const finalDocumentCount = vscode.workspace.textDocuments.length;
     strictEqual(finalDocumentCount, initialDocumentCount, 'No new document should be created for empty document');
+  });
+
+  test('should handle large complex data with unicode characters', async () => {
+    const largeComplexData = JSON.stringify(
+      {
+        users: Array.from({ length: 1000 }, (_, i) => ({
+          id: i,
+          name: `User ${i} 👤`,
+          email: `user${i}@example.com`,
+          description: 'This is a long description with unicode: 🚀 ✨ 🎉 中文 日本語 한글',
+          metadata: {
+            created: new Date().toISOString(),
+            tags: ['tag1', 'tag2', 'tag3'],
+            nested: { deep: { value: `nested-${i}` } },
+          },
+        })),
+      },
+      null,
+      2,
+    );
+
+    const { editor } = await createDocumentWithSelection(largeComplexData);
+    const initialDocumentCount = vscode.workspace.textDocuments.length;
+
+    await executeCommandAndWait('gzip-unzip-text.gzip');
+
+    const newDocumentCount = vscode.workspace.textDocuments.length;
+    strictEqual(newDocumentCount, initialDocumentCount + 1, 'New document should be created for gzip');
+
+    const gzippedEditor = vscode.window.activeTextEditor;
+    ok(gzippedEditor, 'Gzipped editor should be active');
+    ok(gzippedEditor !== editor, 'Active editor should be different from original');
+
+    const gzippedText = gzippedEditor.document.getText();
+    ok(gzippedText.length < largeComplexData.length, 'Gzipped data should be smaller than original');
+
+    const decompressed = await unzipText(gzippedText);
+    strictEqual(decompressed, largeComplexData, 'Decompressed data should match original large complex data');
   });
 });
