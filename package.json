@@ -55,7 +55,7 @@
     "@types/vscode": "1.106.1",
     "@vscode/test-cli": "0.0.12",
     "@vscode/test-electron": "2.5.2",
-    "esbuild": "0.27.0",
+    "esbuild": "0.27.1",
     "fast-check": "4.3.0",
     "typescript": "5.9.3"
   },
