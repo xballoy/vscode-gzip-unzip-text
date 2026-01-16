@@ -18,8 +18,8 @@ importers:
         specifier: 24.10.7
         version: 24.10.7
       '@types/vscode':
-        specifier: 1.107.0
-        version: 1.107.0
+        specifier: 1.108.0
+        version: 1.108.0
       '@vscode/test-cli':
         specifier: 0.0.12
         version: 0.0.12
@@ -282,8 +282,8 @@ packages:
   '@types/node@24.10.7':
     resolution: {integrity: sha512-+054pVMzVTmRQV8BhpGv3UyfZ2Llgl8rdpDTon+cUH9+na0ncBVXj3wTUKh14+Kiz18ziM3b4ikpP5/Pc0rQEQ==}
 
-  '@types/vscode@1.107.0':
-    resolution: {integrity: sha512-XS8YE1jlyTIowP64+HoN30OlC1H9xqSlq1eoLZUgFEC8oUTO6euYZxti1xRiLSfZocs4qytTzR6xCBYtioQTCg==}
+  '@types/vscode@1.108.0':
+    resolution: {integrity: sha512-WXEz8iCGrraEf+NB8gvC9ONakihpRYsnw2n8oq2/qAQGB5MrQERlkd2KxjpvlLHPjyu3uBynDZ+DRUe5vsw94g==}
 
   '@vscode/test-cli@0.0.12':
     resolution: {integrity: sha512-iYN0fDg29+a2Xelle/Y56Xvv7Nc8Thzq4VwpzAF/SIE6918rDicqfsQxV6w1ttr2+SOm+10laGuY9FG2ptEKsQ==}
@@ -982,7 +982,7 @@ snapshots:
     dependencies:
       undici-types: 7.16.0
 
-  '@types/vscode@1.107.0': {}
+  '@types/vscode@1.108.0': {}
 
   '@vscode/test-cli@0.0.12':
     dependencies:
