@@ -691,8 +691,8 @@ packages:
   process-nextick-args@2.0.1:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}
 
-  pure-rand@8.0.0:
-    resolution: {integrity: sha512-7rgWlxG2gAvFPIQfUreo1XYlNvrQ9VnQPFWdncPkdl3icucLK0InOxsaafbvxGTnI6Bk/Rxmslg0lQlRCuzOXw==}
+  pure-rand@8.1.0:
+    resolution: {integrity: sha512-53B3MB8wetRdD6JZ4W/0gDKaOvKwuXrEmV1auQc0hASWge8rieKV4PCCVNVbJ+i24miiubb4c/B+dg8Ho0ikYw==}
 
   randombytes@2.1.0:
     resolution: {integrity: sha512-vYl3iOX+4CKUWuxGi9Ukhie6fsqXqS9FE2Zaic4tNFD2N2QQaXOMFbuKK4QmDHC0JO6B1Zp41J0LpT0oR68amQ==}
@@ -1189,7 +1189,7 @@ snapshots:
 
   fast-check@4.6.0:
     dependencies:
-      pure-rand: 8.0.0
+      pure-rand: 8.1.0
 
   fill-range@7.1.1:
     dependencies:
@@ -1420,7 +1420,7 @@ snapshots:
 
   process-nextick-args@2.0.1: {}
 
-  pure-rand@8.0.0: {}
+  pure-rand@8.1.0: {}
 
   randombytes@2.1.0:
     dependencies:
