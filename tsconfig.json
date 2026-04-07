@@ -8,6 +8,8 @@
     "strict": true,
     "skipLibCheck": true,
 
+    "types": ["node", "mocha"],
+
     "rootDir": "src"
   }
 }
