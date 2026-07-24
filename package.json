@@ -59,7 +59,7 @@
     "@vscode/test-electron": "3.0.0",
     "esbuild": "0.28.1",
     "fast-check": "4.9.0",
-    "typescript": "6.0.3"
+    "typescript": "7.0.2"
   },
   "packageManager": "pnpm@11.14.0"
 }
