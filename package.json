@@ -49,17 +49,17 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.5.8",
-    "@tsconfig/node24": "24.0.4",
+    "@biomejs/biome": "2.5.9",
+    "@tsconfig/node24": "24.0.5",
     "@tsconfig/strictest": "2.0.8",
     "@types/mocha": "10.0.10",
     "@types/node": "24.13.3",
-    "@types/vscode": "1.125.0",
+    "@types/vscode": "1.134.0",
     "@vscode/test-cli": "0.0.15",
     "@vscode/test-electron": "3.1.0",
     "esbuild": "0.28.2",
     "fast-check": "4.9.0",
     "typescript": "7.0.2"
   },
-  "packageManager": "pnpm@11.21.0"
+  "packageManager": "pnpm@11.22.0"
 }
