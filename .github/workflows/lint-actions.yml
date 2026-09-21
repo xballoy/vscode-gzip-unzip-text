@@ -48,12 +48,12 @@ jobs:
 
       - name: Run actionlint
         env:
-          # renovate: datasource=github-releases depName=rhysd/actionlint
-          ACTIONLINT_VERSION: 1.7.12
+          # renovate: datasource=github-releases depName=kjanat/actionlint
+          ACTIONLINT_VERSION: 1.17.0
         run: |
-          curl -fsSL -o actionlint-matcher.json "https://raw.githubusercontent.com/rhysd/actionlint/v${ACTIONLINT_VERSION}/.github/actionlint-matcher.json"
+          curl -fsSL -o actionlint-matcher.json "https://raw.githubusercontent.com/kjanat/actionlint/v${ACTIONLINT_VERSION}/.github/actionlint-matcher.json"
           echo "::add-matcher::actionlint-matcher.json"
-          bash <(curl -fsSL "https://raw.githubusercontent.com/rhysd/actionlint/v${ACTIONLINT_VERSION}/scripts/download-actionlint.bash") "${ACTIONLINT_VERSION}"
+          bash <(curl -fsSL "https://raw.githubusercontent.com/kjanat/actionlint/v${ACTIONLINT_VERSION}/scripts/download-actionlint.bash") "${ACTIONLINT_VERSION}"
           ./actionlint -color
         shell: bash
 
