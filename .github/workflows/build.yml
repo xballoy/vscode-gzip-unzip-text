@@ -22,7 +22,7 @@ jobs:
     strategy:
       matrix:
         config:
-          - os: ubuntu-24.04
+          - os: ubuntu-26.04
           - os: macos-26
           - os: windows-2025
 
