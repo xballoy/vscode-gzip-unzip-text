@@ -5,6 +5,9 @@
     "clientKind": "git",
     "useIgnoreFile": true
   },
+  "files": {
+    "includes": ["**", "!pnpm-lock.yaml"]
+  },
   "formatter": {
     "enabled": true,
     "indentStyle": "space",
@@ -12,13 +15,13 @@
   },
   "assist": {
     "actions": {
-      "recommended": true
+      "preset": "recommended"
     }
   },
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true,
+      "preset": "recommended",
       "style": {
         "noParameterAssign": "error",
         "useAsConstAssertion": "error",
