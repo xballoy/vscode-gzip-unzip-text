@@ -1,23 +1,15 @@
 name: Publish to Marketplace
 
 on:
-  workflow_dispatch:
-    inputs:
-      version:
-        description: "Version"
-        required: true
-        default: "minor"
-        type: choice
-        options:
-          - patch
-          - minor
-          - major
+  push:
+    tags:
+      - "v[0-9]+.[0-9]+.[0-9]+"
 
 permissions: {}
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+  cancel-in-progress: false
 
 jobs:
   release:
@@ -26,14 +18,22 @@ jobs:
     runs-on: ubuntu-26.04
     environment: marketplace
     permissions:
-      contents: write
+      contents: read
       id-token: write
 
     steps:
       - name: Checkout
         uses: actions/checkout@v7.0.1
         with:
+          fetch-depth: 0
           persist-credentials: false
+
+      - name: Check the tag is on main and matches the package version
+        env:
+          TAG: ${{ github.ref_name }}
+        run: |
+          git merge-base --is-ancestor "$GITHUB_SHA" origin/main
+          test "$TAG" = "v$(jq -r .version package.json)"
 
       - name: Install pnpm
         uses: pnpm/action-setup@v6.1.0
@@ -42,26 +42,10 @@ jobs:
         uses: actions/setup-node@v7.1.0
         with:
           node-version-file: ".nvmrc"
+          package-manager-cache: false
 
       - name: Install dependencies
         run: pnpm ci
 
-      - name: Bump the package version
-        env:
-          VERSION: ${{ github.event.inputs.version }}
-        run: |
-          git config user.name 'Xavier Balloy'
-          git config user.email '686305+xballoy@users.noreply.github.com'
-          pnpm version "$VERSION"
-
       - name: Publish
         run: pnpm exec vsce publish --no-dependencies --oidc
-
-      - name: Push
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          REPO: ${{ github.repository }}
-        run: |
-          git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${REPO}"
-          git push
-          git push --tags
