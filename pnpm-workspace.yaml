@@ -3,3 +3,6 @@ allowBuilds:
   "@swc/core": true
   "@vscode/vsce-sign": false
   esbuild: true
+trustPolicy: no-downgrade
+trustPolicyExclude:
+  - chokidar@4.0.3
