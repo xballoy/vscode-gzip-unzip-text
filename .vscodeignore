@@ -12,3 +12,11 @@ vsc-extension-quickstart.md
 **/*.map
 **/*.ts
 **/.vscode-test.*
+.github/**
+.nvmrc
+biome.json
+esbuild.js
+pnpm-lock.yaml
+pnpm-workspace.yaml
+renovate.json
+tsconfig.eslint.json
