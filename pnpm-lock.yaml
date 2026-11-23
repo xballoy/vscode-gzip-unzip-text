@@ -172,9 +172,9 @@ importers:
       '@kjanat/actionlint':
         specifier: 1.17.0
         version: 1.17.0
-      '@tsconfig/node24':
-        specifier: 24.0.5
-        version: 24.0.5
+      '@tsconfig/node26':
+        specifier: 26.0.0
+        version: 26.0.0
       '@tsconfig/strictest':
         specifier: 2.0.8
         version: 2.0.8
@@ -671,8 +671,8 @@ packages:
     resolution: {integrity: sha512-Nqc90v4lWCXyakD6xNyNACBJNJ0tNCwj2WNk/7ivyacYHxiITVgmLUFXTBOeCdy79iz6HtN9Y31uw/jbLrdOAg==}
     engines: {node: '>=20.0.0'}
 
-  '@tsconfig/node24@24.0.5':
-    resolution: {integrity: sha512-DWC54fGPuhZgg3Ighg4Y/A/bA3ZdB5hnzAuv/MkQ/X85sVsBsMQxu8t7khutdYeiNksBbFdDyeqv1HSW2Zl8aA==}
+  '@tsconfig/node26@26.0.0':
+    resolution: {integrity: sha512-AlW882moMu/JzvTVjdGqJEsrqD5nSWHiFD7Aeuw6Rb58S4Aig+09mDUFFlXJx/y6/y77NwGYLlqhWxvolcC0sw==}
 
   '@tsconfig/strictest@2.0.8':
     resolution: {integrity: sha512-XnQ7vNz5HRN0r88GYf1J9JJjqtZPiHt2woGJOo2dYqyHGGcd6OLGqSlBB6p1j9mpzja6Oe5BoPqWmeDx6X9rLw==}
@@ -812,6 +812,7 @@ packages:
   '@typespec/ts-http-runtime@0.3.10':
     resolution: {integrity: sha512-vddvvtZ7sejSlCv+OIkn2ztjB1O31Fc2JsxI/YK725r3elXXlF/J3o3lbXJFRhoeWRWK1tjdZ+GTi6Fdtrp+EA==}
     engines: {node: '>=22.0.0'}
+    deprecated: A newer version 0.3.11 has been published.
 
   '@vscode/test-cli@0.0.15':
     resolution: {integrity: sha512-nAxk2X79wuXS7aOhyFFhFcCqd7EBUoMesu7ZgsYE/4eFjyBMuyIweVE94BxdKH1RieN8eOz2SIrljrZt6Lk9fQ==}
@@ -2099,7 +2100,7 @@ snapshots:
 
   '@secretlint/types@10.2.2': {}
 
-  '@tsconfig/node24@24.0.5': {}
+  '@tsconfig/node26@26.0.0': {}
 
   '@tsconfig/strictest@2.0.8': {}
 
