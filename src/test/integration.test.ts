@@ -35,6 +35,16 @@ suite('Gzip / Unzip Integration Test Suite', () => {
   const plainText = 'Hello world!';
   const gzippedBase64 = 'H4sIAAAAAAAAE/NIzcnJVyjPL8pJUQQAlRmFGwwAAAA=';
 
+  suiteSetup(async function () {
+    this.timeout(30_000);
+    const extension = vscode.extensions.getExtension('xballoy.gzip-unzip-text');
+    ok(extension, 'Extension should be installed');
+    await extension.activate();
+    const document = await vscode.workspace.openTextDocument({ content: '', language: 'plaintext' });
+    await vscode.window.showTextDocument(document);
+    await vscode.commands.executeCommand('workbench.action.closeAllEditors');
+  });
+
   teardown(async () => {
     await vscode.commands.executeCommand('workbench.action.closeAllEditors');
   });
