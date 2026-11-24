@@ -1,5 +1,5 @@
 {
-  "extends": ["@tsconfig/node26/tsconfig.json", "@tsconfig/strictest/tsconfig.json"],
+  "extends": ["@tsconfig/node20/tsconfig.json", "@tsconfig/strictest/tsconfig.json"],
   "compilerOptions": {
     "sourceMap": true,
     "types": ["node", "mocha"],

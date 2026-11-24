@@ -5,6 +5,15 @@
     {
       "matchPackageNames": ["@types/vscode"],
       "enabled": false
+    },
+    {
+      "matchPackageNames": ["@types/node"],
+      "allowedVersions": "<21"
+    },
+    {
+      "matchPackageNames": ["@tsconfig/node20"],
+      "matchUpdateTypes": ["replacement"],
+      "enabled": false
     }
   ],
   "customManagers": [
