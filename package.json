@@ -49,19 +49,19 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.6.4",
-    "@kjanat/actionlint": "1.17.0",
-    "@tsconfig/node26": "26.0.0",
-    "@tsconfig/strictest": "2.0.8",
+    "@biomejs/biome": "2.6.8",
+    "@kjanat/actionlint": "1.17.1",
+    "@tsconfig/node26": "26.0.2",
+    "@tsconfig/strictest": "2.0.9",
     "@types/mocha": "10.0.10",
     "@types/node": "26.6.6",
     "@types/vscode": "1.98.0",
     "@vscode/test-cli": "0.0.15",
     "@vscode/test-electron": "3.1.0",
-    "@vscode/vsce": "4.1.0",
+    "@vscode/vsce": "4.1.1",
     "esbuild": "0.28.2",
-    "fast-check": "4.10.2",
+    "fast-check": "4.10.3",
     "typescript": "7.0.2"
   },
-  "packageManager": "pnpm@12.16.1"
+  "packageManager": "pnpm@12.22.0"
 }
