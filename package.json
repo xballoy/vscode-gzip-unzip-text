@@ -51,10 +51,10 @@
   "devDependencies": {
     "@biomejs/biome": "2.6.8",
     "@kjanat/actionlint": "1.17.1",
-    "@tsconfig/node26": "26.0.2",
+    "@tsconfig/node20": "20.1.11",
     "@tsconfig/strictest": "2.0.9",
     "@types/mocha": "10.0.10",
-    "@types/node": "26.6.6",
+    "@types/node": "20.19.43",
     "@types/vscode": "1.98.0",
     "@vscode/test-cli": "0.0.15",
     "@vscode/test-electron": "3.1.0",

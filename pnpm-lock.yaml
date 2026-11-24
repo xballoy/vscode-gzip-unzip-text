@@ -181,9 +181,9 @@ importers:
       '@kjanat/actionlint':
         specifier: 1.17.1
         version: 1.17.1
-      '@tsconfig/node26':
-        specifier: 26.0.2
-        version: 26.0.2
+      '@tsconfig/node20':
+        specifier: 20.1.11
+        version: 20.1.11
       '@tsconfig/strictest':
         specifier: 2.0.9
         version: 2.0.9
@@ -191,8 +191,8 @@ importers:
         specifier: 10.0.10
         version: 10.0.10
       '@types/node':
-        specifier: 26.6.6
-        version: 26.6.6
+        specifier: 20.19.43
+        version: 20.19.43
       '@types/vscode':
         specifier: 1.98.0
         version: 1.98.0
@@ -681,8 +681,8 @@ packages:
     resolution: {integrity: sha512-Nqc90v4lWCXyakD6xNyNACBJNJ0tNCwj2WNk/7ivyacYHxiITVgmLUFXTBOeCdy79iz6HtN9Y31uw/jbLrdOAg==}
     engines: {node: '>=20.0.0'}
 
-  '@tsconfig/node26@26.0.2':
-    resolution: {integrity: sha512-RIBSoNGQxUQ8r4hSrEzS6TrUneoKaCuX6BjL4zF3wqttGq2w06zCea4d8P1gRvM/HZyDT1FQJ8trZSyy/63oMg==}
+  '@tsconfig/node20@20.1.11':
+    resolution: {integrity: sha512-QVKMhWQl38o/z1+O6xAFjpYhmUi6a/WLuCDiwKOmRSw8MaI/RrV7LwQAjl87cX0GUdu3c0kzmIsOaycXko+iHQ==}
 
   '@tsconfig/strictest@2.0.9':
     resolution: {integrity: sha512-CbwIySRXoGapLZYXqQHF15cg0wQImJa25Ynmubb7816vnHqTdQrmQlSbZxkJrrBusHLbF1kFbNVn8XtxmQ3EpQ==}
@@ -693,8 +693,8 @@ packages:
   '@types/mocha@10.0.10':
     resolution: {integrity: sha512-xPyYSz1cMPnJQhl0CLMH68j3gprKZaTjG3s5Vi+fDgx+uhG9NOXwbVt52eFS8ECyXhyKcjDLCBEqBExKuiZb7Q==}
 
-  '@types/node@26.6.6':
-    resolution: {integrity: sha512-MzQj+8Kx3XI40OmUAE6Qoh58ZMNstNNMwn2nfd3qWsfe7nDNSqJNzes4njhz6AHwrSHOffSLwXU6yb474Q4aog==}
+  '@types/node@20.19.43':
+    resolution: {integrity: sha512-6oYBAi5ikg4Pl+kGsoYtawUMBT2zZMCvPNF7pVLnHZfd1zf38DRiWn/gT01RYCdUqkv7Fhr+C9ot4/tb+2sVvA==}
 
   '@types/vscode@1.98.0':
     resolution: {integrity: sha512-+KuiWhpbKBaG2egF+51KjbGWatTH5BbmWQjSLMDCssb4xF8FJnW4nGH4nuAdOOfMbpD0QlHtI+C3tPq+DoKElg==}
@@ -1660,8 +1660,8 @@ packages:
   underscore@1.13.8:
     resolution: {integrity: sha512-DXtD3ZtEQzc7M8m4cXotyHR+FAS18C64asBYY5vqZexfYryNNnDc02W4hKg3rdQuqOYas1jkseX0+nZXjTXnvQ==}
 
-  undici-types@8.9.0:
-    resolution: {integrity: sha512-KTDyRTYX8sWmKXAikPHHSyc63CRPETMctyjKFupcC6OBLXT3xsN0e9aF7m+mIXutFWpUXuedtowG7iLOzp0kQg==}
+  undici-types@6.21.0:
+    resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
 
   url-join@4.0.1:
     resolution: {integrity: sha512-jk1+QP6ZJqyOiuEI9AEWQfju/nB2Pw466kbA0LEZljHwKeMgd9WrAEgEGxjPDD2+TNbbb37rTyhEfrCXfuKXnA==}
@@ -2110,7 +2110,7 @@ snapshots:
 
   '@secretlint/types@10.2.2': {}
 
-  '@tsconfig/node26@26.0.2': {}
+  '@tsconfig/node20@20.1.11': {}
 
   '@tsconfig/strictest@2.0.9': {}
 
@@ -2118,9 +2118,9 @@ snapshots:
 
   '@types/mocha@10.0.10': {}
 
-  '@types/node@26.6.6':
+  '@types/node@20.19.43':
     dependencies:
-      undici-types: 8.9.0
+      undici-types: 6.21.0
 
   '@types/vscode@1.98.0': {}
 
@@ -3076,7 +3076,7 @@ snapshots:
 
   underscore@1.13.8: {}
 
-  undici-types@8.9.0: {}
+  undici-types@6.21.0: {}
 
   url-join@4.0.1: {}
 
